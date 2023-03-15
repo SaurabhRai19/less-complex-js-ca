@@ -6,8 +6,8 @@ try {
     {   
         console.log("In Function");
         console.log(String(mail).toLowerCase());
-        console.log(res.test(String(mail).toLowerCase()));
         const res = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        console.log(res.test(String(mail).toLowerCase()));
         return res.test(String(mail).toLowerCase());
         
     //  if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(myForm.emailAddr.value))
