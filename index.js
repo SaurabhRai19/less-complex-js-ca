@@ -12,9 +12,9 @@ try {
   console.log(`Entered email is ${email}.`);
   var validornot= ValidateEmail(email); //validornot is of boolean type
   if(validornot === true){
-    core.setOutput("message", "Valid Email and returned value is not string");
+    core.setOutput("message", "It is a Valid Email.");
   }else if(validornot === false){
-   core.setOutput("message", "Invalid Email and returned value is not string");
+   //core.setOutput("message", "It is Invalid Email.");
    core.setFailed("Invalid Email syntax");
 }
   // Get the JSON webhook payload for the event that triggered the workflow
