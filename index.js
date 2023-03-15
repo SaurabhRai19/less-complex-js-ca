@@ -16,16 +16,16 @@ try {
   console.log("Validornot Variable");
   console.log(validornot);
   console.log(typeof validornot);
-  if(validornot == true){
+  if(validornot === true){
     core.setOutput("message", "Valid Email and returned value is not string");
-  }else{
+  }else if(validornot === false){
     core.setOutput("message", "Invalid Email and returned value is not string");
   }
-  if(validornot == "true"){
-    core.setOutput("message", "Valid");
-  }else{
-    core.setOutput("message", "Invalid");
-  }
+//   if(validornot == "true"){
+//     core.setOutput("message", "Valid");
+//   }else if(validornot === false){
+//     core.setOutput("message", "Invalid");
+//   }
   // Get the JSON webhook payload for the event that triggered the workflow
   const payload = JSON.stringify(github.context.payload, undefined, 2)
   console.log(`The event payload: ${payload}`);
