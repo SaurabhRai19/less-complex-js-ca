@@ -1,5 +1,6 @@
 const core = require('@actions/core');
 const github = require('@actions/github');
+let axios = require("axios");
 
 try {
     async function azureAPICalling(){
