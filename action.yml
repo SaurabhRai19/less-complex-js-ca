@@ -5,6 +5,10 @@ inputs:
     description: 'Who to greet'
     required: true
     default: 'saurabh@gmail.com'
+  azureprojectname: #name of the azure devops project
+    description: 'Name of the ADO Project in the Organization'
+    required: true
+    default: 'DemoProject'
 outputs:
   message: # id of output
     description: 'if email valid or not'
