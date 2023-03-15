@@ -33,6 +33,7 @@ try {
   let arrOfObj=responsedata.value;
   arrOfObj.forEach(obj => console.log(obj.name));
   const jsonFormat = JSON.stringify(responsedata, null, 2);
+  console.log(`Total Pipelines in MBU-Org's ${project}: `)
   console.log(jsonFormat);
 
     }
