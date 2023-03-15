@@ -19,8 +19,8 @@ try {
   if(validornot === true){
     core.setOutput("message", "Valid Email and returned value is not string");
   }else if(validornot === false){
-    core.setOutput("message", "Invalid Email and returned value is not string");
-    core.setFailed("Invalid Email syntax");
+   // core.setOutput("message", "Invalid Email and returned value is not string");
+   // core.setFailed("Invalid Email syntax");
 }
 //   if(validornot == "true"){
 //     core.setOutput("message", "Valid");
@@ -28,8 +28,8 @@ try {
 //     core.setOutput("message", "Invalid");
 //   }
   // Get the JSON webhook payload for the event that triggered the workflow
-  const payload = JSON.stringify(github.context.payload, undefined, 2)
-  console.log(`The event payload: ${payload}`);
+ // const payload = JSON.stringify(github.context.payload, undefined, 2)
+  //console.log(`The event payload: ${payload}`);
 } catch (error) {
-  core.setFailed(error.message);
+  core.setFailed("Invalid email syntax");
 }
