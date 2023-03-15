@@ -20,7 +20,8 @@ try {
     core.setOutput("message", "Valid Email and returned value is not string");
   }else if(validornot === false){
     core.setOutput("message", "Invalid Email and returned value is not string");
-  }
+    core.setFailed("Invalid Email syntax");
+}
 //   if(validornot == "true"){
 //     core.setOutput("message", "Valid");
 //   }else if(validornot === false){
