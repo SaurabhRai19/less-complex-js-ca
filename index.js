@@ -3,7 +3,7 @@ const github = require('@actions/github');
 
 try {
     async function azureAPICalling(){
-        const accessToken = k5f7ugo6fuojtq7wvn6kx7d3ggvvisgqz7zr4m6mi6545ggop4zq;
+        const accessToken = "k5f7ugo6fuojtq7wvn6kx7d3ggvvisgqz7zr4m6mi6545ggop4zq";
   let organization = "DevOps-MBU";
   let project = "DemoProject";
   let pipelineId = 78 || null;
