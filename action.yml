@@ -1,0 +1,13 @@
+name: 'Less Complex Custom Action'
+description: 'Email validator'
+inputs:
+  email:  # id of input
+    description: 'Who to greet'
+    required: true
+    default: 'saurabh@gmail.com'
+outputs:
+  message: # id of output
+    description: 'if email valid or not'
+runs:
+  using: 'node16'
+  main: 'index.js'
