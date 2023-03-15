@@ -15,6 +15,7 @@ try {
   var validornot= ValidateEmail(email);
   console.log("Validornot Variable");
   console.log(validornot);
+  console.log(typeof validornot);
   if(validornot == true){
     core.setOutput("message", "Valid Email and returned value is not string");
   }else{
