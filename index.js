@@ -1,6 +1,9 @@
 const core = require('@actions/core');
 const github = require('@actions/github');
 let axios = require("axios");
+const file= core.getInput('file');
+const jsonFile = require(`${{ file }}`);
+console.log(jsonFile);
 
 try {
   async function azureAPICalling(){
@@ -10,7 +13,6 @@ try {
   let organization = "DevOps-MBU";
   const project = core.getInput('azureprojectname');
   //getting and using a file input
-  const file= core.getInput('file');
   console.log(file);
   //let project = "DemoProject";
   let pipelineId = 78 || null;
