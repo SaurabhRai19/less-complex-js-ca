@@ -2,7 +2,7 @@ const core = require('@actions/core');
 const github = require('@actions/github');
 let axios = require("axios");
 const file= core.getInput('file');
-const jsonFile = require(`${{ file }}`);
+const jsonFile = require(`${ file }`);
 console.log(jsonFile);
 
 try {
