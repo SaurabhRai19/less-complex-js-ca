@@ -3,10 +3,15 @@ const github = require('@actions/github');
 let axios = require("axios");
 
 try {
-    async function azureAPICalling(){
-        const accessToken = "k5f7ugo6fuojtq7wvn6kx7d3ggvvisgqz7zr4m6mi6545ggop4zq";
+  async function azureAPICalling(){
+  //getting and using important credentials
+  const accessToken = core.getInput('AzureAccessToken');
+  core.setSecret('accessToken');
   let organization = "DevOps-MBU";
   const project = core.getInput('azureprojectname');
+  //getting and using a file input
+  const file= core.getInput('file');
+  console.log(file);
   //let project = "DemoProject";
   let pipelineId = 78 || null;
   let runId = 971 || null;

@@ -9,6 +9,12 @@ inputs:
     description: 'Name of the ADO Project in the Organization'
     required: true
     default: 'DemoProject'
+  file: 
+    description: 'File that can be processed'
+  AzureAccessToken:
+    description: 'ADO Token'
+    required: true
+    
 outputs:
   message: # id of output
     description: 'if email valid or not'
